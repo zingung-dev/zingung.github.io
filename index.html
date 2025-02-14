@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보고또보고 - AI 부동산 서비스</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="보고또보고">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">서비스 소개 ▼</a></li>
+                    <li><a href="#">요금 안내</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <!-- 텍스트 부분 삭제 -->
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="process-header">
+                <img src="images/big-logo.png" alt="BTB 로고" class="process-logo">
+                <img src="images/text.png" alt="BTB 텍스트" class="process-text">
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon gray">매물찾기</div>
+                </div>
+                <div class="step-dots"></div>
+                <div class="step">
+                    <div class="step-icon blue">권리분석</div>
+                </div>
+                <div class="step-dots"></div>
+                <div class="step">
+                    <div class="step-icon red">계약체결</div>
+                </div>
+                <div class="step-dots"></div>
+                <div class="step">
+                    <div class="step-icon yellow">안전거래</div>
+                </div>
+                <div class="step-dots"></div>
+                <div class="step">
+                    <div class="step-icon green">등기이전</div>
+                </div>
+                <div class="step-dots"></div>
+                <div class="step">
+                    <div class="step-icon brown">변호사<br>상담요청</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chat">
+            <div class="chat-container">
+                <div class="chat-profile">
+                    <img src="images/duri.png" 
+                         alt="AI 상담사 두리" 
+                         onclick="openModal('images/duri_big.jpg')"
+                         class="profile-img">
+                </div>
+                <div class="chat-input-wrapper">
+                    <textarea placeholder="안녕하세요? AI상담사 두리예요. 궁금한 게 있으시면 편하게 물어보세요."></textarea>
+                    <label for="file-upload" class="attach-button">
+                        <img src="images/clip.png" alt="첨부">
+                    </label>
+                    <input type="file" id="file-upload" multiple style="display: none;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 모달 추가 -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
